@@ -84,6 +84,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>taskManager-service</finalName>
 	</build>
 
 </project>
