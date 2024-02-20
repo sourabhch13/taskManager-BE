@@ -54,7 +54,7 @@ public class UserServices {
             String token = jwtHelper.generateToken(currUser);
             return new ApiResponse<JwtResponse>(200,"Success","Logged In",new JwtResponse(currUser,token));
         }
-        return new ApiResponse<JwtResponse>(400,"Failed","Invalid Credentials!");
+        return new ApiResponse<JwtResponse>(400,"Failed","Invalid Credentials");
     }
 
     public ApiResponse<List<User>> allUser(){
