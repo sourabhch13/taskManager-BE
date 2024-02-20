@@ -30,6 +30,7 @@ public class UserController {
 
     @PostMapping(path = "login")
     public ResponseEntity<ApiResponse<JwtResponse>> login(@RequestBody User user){
+        System.out.println("Here!"); 
         ApiResponse<JwtResponse> res = userServices.login(user.getEmail(),user.getPassword());
         return new ResponseEntity<>(res,HttpStatusCode.valueOf(res.getStatusCode()));
     }
